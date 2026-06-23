@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<meta name="theme-color" content="#d4af37">
+<meta name="theme-color" content="#10b981">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
-<title>Royyek Vault - Premium Cloud v8.6 (Multi Profile + Cloud Sync)</title>
+<title>Royyek Vault - Premium Cloud v8.5 (Multiple Vaults + Multi Profile)</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2910/2910805.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,15 +17,15 @@
 :root {
 --font-standar: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 --font-standar-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
---bg-dark: #050505;
---body-bg: #050505;
---bg-surface: #101010;
+--bg-dark: #061412;
+--body-bg: #061412;
+--bg-surface: #0b1f1b;
 --text-main: #f3f0ff;
---cyan: #d4af37;
---cyan-light: #f4d03f;
---cyan-dark: #b8860b;
---blue: #ffd700;
---indigo: #c9a227;
+--cyan: #10b981;
+--cyan-light: #34d399;
+--cyan-dark: #047857;
+--blue: #f59e0b;
+--indigo: #14b8a6;
 --slate-300: #cbd5e1;
 --slate-500: #94a3b8;
 --nav-bg: rgba(15, 10, 26, 0.96);
@@ -34,19 +34,19 @@
 --input-bg: rgba(0, 0, 0, 0.3);
 --sidebar-width: 280px;
 --badge-bg: rgba(139, 92, 246, 0.15);
---badge-text: #f4d03f;
---app-row-bg: #101010;
+--badge-text: #34d399;
+--app-row-bg: #0b1f1b;
 --app-row-hover: #251840;
 --popup-bg-premium: rgba(15, 10, 26, 0.98);
 --popup-border-premium: rgba(139, 92, 246, 0.2);
 --delete-btn-bg: rgba(244, 63, 94, 0.12);
 --delete-btn-text: #fb7185;
---accent-color: #d4af37;
+--accent-color: #10b981;
 --border-glow: rgba(139, 92, 246, 0.3);
 --card-border-custom: rgba(139, 92, 246, 0.15);
 --kpi-bg-1: linear-gradient(135deg, #4c1d95 0%, #2e1065 100%);
---kpi-bg-2: linear-gradient(135deg, #2b2200 0%, #0f172a 100%);
---kpi-text-1: #f4d03f;
+--kpi-bg-2: linear-gradient(135deg, #052e2b 0%, #0f172a 100%);
+--kpi-text-1: #34d399;
 --kpi-text-2: #38bdf8;
 --kpi-label-1: rgba(167, 139, 250, 0.8);
 --kpi-label-2: rgba(56, 189, 248, 0.8);
@@ -55,14 +55,14 @@
 --drag-ghost-bg: rgba(139, 92, 246, 0.2);
 --drag-placeholder-bg: rgba(139, 92, 246, 0.05);
 --drag-handle-color: rgba(167, 139, 250, 0.5);
---sync-online: #d4af37;
+--sync-online: #10b981;
 --sync-offline: #f43f5e;
 --sync-pending: #fbbf24;
---title-gradient: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
---subtitle-color: #ffd700;
---folder-level-0: #d4af37;
+--title-gradient: linear-gradient(135deg, #10b981 0%, #f59e0b 100%);
+--subtitle-color: #f59e0b;
+--folder-level-0: #10b981;
 --folder-level-1: #6366f1;
---folder-level-2: #ffd700;
+--folder-level-2: #f59e0b;
 --folder-level-0-glow: rgba(139, 92, 246, 0.4);
 --folder-level-1-glow: rgba(99, 102, 241, 0.4);
 --folder-level-2-glow: rgba(6, 182, 212, 0.4);
@@ -80,22 +80,22 @@
 --folder-hover-shadow-2: 0 10px 30px rgba(6, 182, 212, 0.25);
 }
 [data-theme="light"] {
---bg-dark: #f8f4e8;
---body-bg: #f8f4e8;
---body-bg-gradient: linear-gradient(135deg, #efe6c3 0%, #f8f4e8 50%, #f0f9ff 100%);
+--bg-dark: #f0fdf4;
+--body-bg: #f0fdf4;
+--body-bg-gradient: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 50%, #f0f9ff 100%);
 --bg-surface: #ffffff;
---text-main: #2b2200;
+--text-main: #052e2b;
 --slate-300: #475569;
 --slate-500: #64748b;
 --nav-bg: rgba(255, 255, 255, 0.9);
 --header-bg: rgba(255, 255, 255, 0.85);
---header-border: #e6c86e;
+--header-border: #bbf7d0;
 --card-border: rgba(139, 92, 246, 0.15);
 --input-bg: rgba(245, 243, 255, 0.8);
 --badge-bg: rgba(139, 92, 246, 0.15);
---badge-text: #b8860b;
+--badge-text: #047857;
 --app-row-bg: #ffffff;
---app-row-hover: #efe6c3;
+--app-row-hover: #ecfdf5;
 --popup-bg-premium: rgba(255, 255, 255, 0.98);
 --popup-border-premium: rgba(139, 92, 246, 0.2);
 --delete-btn-bg: rgba(244, 63, 94, 0.1);
@@ -107,7 +107,7 @@
 --kpi-bg-2: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
 --kpi-text-1: #5b21b6;
 --kpi-text-2: #0369a1;
---kpi-label-1: #b8860b;
+--kpi-label-1: #047857;
 --kpi-label-2: #075985;
 --card-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);
 --card-shadow-hover: 0 10px 15px -3px rgba(139, 92, 246, 0.15);
@@ -141,7 +141,7 @@
 --folder-hover-shadow-2: 0 10px 30px rgba(8, 145, 178, 0.15);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-user-select: none; user-select: none; }
-.note-content, .note-title, #note-isi, .form-input, .search-box input, .kategori-input, #api-url-input, .pin-input-modern, .popup-value-modern, #picker-new-folder-input, .backup-password-input, #profile-name-input, #new-profile-name, #new-profile-url, #master-db-url-input { -webkit-user-select: text; user-select: text; }
+.note-content, .note-title, #note-isi, .form-input, .search-box input, .kategori-input, #api-url-input, .pin-input-modern, .popup-value-modern, #picker-new-folder-input, .backup-password-input, #profile-name-input, #new-profile-name, #new-profile-url { -webkit-user-select: text; user-select: text; }
 body { background-color: var(--body-bg); font-family: var(--font-standar); color: var(--text-main); overflow: hidden; position: fixed; width: 100%; height: 100%; margin: 0; padding: 0; }
 [data-theme="light"] body { background: var(--body-bg-gradient); }
 .app-container { max-width: 800px; margin: 0 auto; height: 100vh; height: 100dvh; overflow-y: auto; padding: 0 16px calc(110px + env(safe-area-inset-bottom)) 16px; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; }
@@ -178,19 +178,19 @@ h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; background: var(
 .search-drop-row.folder-type:hover { background: rgba(139, 92, 246, 0.15); }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 .new-dashboard-container { animation: fadeIn 0.4s ease; padding-bottom: 20px; }
-.welcome-banner {
-background: linear-gradient(135deg, #d97706 0%, #3b82f6 100%);
-border-radius: 20px;
-padding: 24px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-bottom: 20px;
-border: 1px solid var(--card-border-custom);
-position: relative;
-overflow: hidden;
+.welcome-banner { 
+    background: linear-gradient(135deg, #10b981 0%, #7c3aed 100%);
+    border-radius: 20px; 
+    padding: 24px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+    border: 1px solid var(--card-border-custom); 
+    position: relative; 
+    overflow: hidden; 
 }
-[data-theme="light"] .welcome-banner { background: linear-gradient(135deg, #ede9fe 0%, #efe6c3 100%); border-color: rgba(139, 92, 246, 0.2); }
+[data-theme="light"] .welcome-banner { background: linear-gradient(135deg, #ede9fe 0%, #ecfdf5 100%); border-color: rgba(139, 92, 246, 0.2); }
 .welcome-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%); border-radius: 50%; }
 .welcome-text h2 { font-size: 22px; font-weight: 800; color: var(--text-main); margin-bottom: 6px; }
 .welcome-text p { font-size: 13px; color: var(--slate-300); font-family: var(--font-standar-mono); }
@@ -205,9 +205,9 @@ overflow: hidden;
 .kpi-card-enhanced .kpi-info { display: flex; flex-direction: column; }
 .kpi-card-enhanced .kpi-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--slate-500); margin-bottom: 4px; }
 .kpi-card-enhanced .kpi-value { font-size: 24px; font-weight: 800; color: var(--text-main); }
-.kpi-accent-1 .kpi-icon { background: rgba(139, 92, 246, 0.15); color: #d4af37; }
+.kpi-accent-1 .kpi-icon { background: rgba(139, 92, 246, 0.15); color: #10b981; }
 .kpi-accent-2 .kpi-icon { background: rgba(99, 102, 241, 0.15); color: #6366f1; }
-.kpi-accent-3 .kpi-icon { background: rgba(6, 182, 212, 0.15); color: #ffd700; }
+.kpi-accent-3 .kpi-icon { background: rgba(6, 182, 212, 0.15); color: #f59e0b; }
 .kpi-accent-4 .kpi-icon { background: rgba(244, 63, 94, 0.15); color: #f43f5e; }
 .quick-actions-section { margin-bottom: 24px; }
 .section-title { font-size: 14px; font-weight: 700; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
@@ -217,14 +217,16 @@ overflow: hidden;
 [data-theme="light"] .quick-action-btn { box-shadow: var(--card-shadow); }
 .quick-action-btn:active { transform: scale(0.95); background: var(--app-row-hover); }
 .quick-action-btn .qa-icon { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #fff; }
-.qa-icon.bg-cyan { background: linear-gradient(135deg, #d4af37, #b8860b); }
-.qa-icon.bg-blue { background: linear-gradient(135deg, #ffd700, #0891b2); }
+.qa-icon.bg-cyan { background: linear-gradient(135deg, #10b981, #047857); }
+.qa-icon.bg-blue { background: linear-gradient(135deg, #f59e0b, #0891b2); }
 .qa-icon.bg-red { background: linear-gradient(135deg, #f43f5e, #e11d48); }
 .qa-icon.bg-yellow { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
 .qa-icon.bg-purple { background: linear-gradient(135deg, #a855f7, #7c3aed); }
 .qa-icon.bg-green { background: linear-gradient(135deg, #10b981, #059669); }
 .quick-action-btn span { font-size: 11px; font-weight: 600; color: var(--slate-300); }
 [data-theme="light"] .quick-action-btn span { color: var(--slate-500); }
+.quick-action-edit { position: absolute; top: 4px; right: 4px; width: 24px; height: 24px; background: rgba(244, 63, 94, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fb7185; font-size: 10px; cursor: pointer; opacity: 0; transition: opacity 0.2s; }
+.quick-action-btn:hover .quick-action-edit { opacity: 1; }
 .recent-activity-section .recent-list { display: flex; flex-direction: column; gap: 8px; }
 .recent-item { background: var(--bg-surface); border: 1px solid var(--card-border-custom); border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; transition: all 0.2s; }
 .recent-item:hover { border-color: var(--cyan); transform: translateX(4px); }
@@ -549,18 +551,18 @@ border-color: rgba(139, 92, 246, 0.25);
 .bottom-nav:hover { transform: translateY(-4px); box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(139, 92, 246, 0.3); }
 [data-theme="light"] .bottom-nav { background: rgba(255, 255, 255, 0.85); border: 1px solid rgba(139, 92, 246, 0.2); box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15), 0 0 0 1px rgba(139, 92, 246, 0.1); }
 .config-box { background: rgba(139, 92, 246, 0.08); border: 1px solid var(--card-border-custom); border-radius: 16px; padding: 10px 14px; margin: 14px 16px 4px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-[data-theme="light"] .config-box { background: #fff; border: 1px solid #e6c86e; box-shadow: var(--card-shadow); }
+[data-theme="light"] .config-box { background: #fff; border: 1px solid #bbf7d0; box-shadow: var(--card-shadow); }
 .config-box p { font-size: 13px; font-weight: 700; color: var(--slate-500); white-space: nowrap; display: flex; align-items: center; text-transform: uppercase; letter-spacing: 0.5px; margin: 0; }
 .config-box input { flex-grow: 1; padding: 6px 0; border: none; background: transparent; color: var(--cyan); font-family: var(--font-standar-mono); font-size: 14px; }
 .config-box input:focus { outline: none; }
 .config-box .btn-connect { padding: 8px 16px; font-size: 12px; border-radius: 10px; white-space: nowrap; margin-left: auto; }
 .nav-item { display: flex; flex-direction: column; align-items: center; justify-content: center; color: rgba(148, 163, 184, 0.7); font-size: 10px; font-weight: 600; cursor: pointer; width: 64px; text-align: center; transition: color 0.2s ease; gap: 3px; padding: 4px 0; }
 .nav-item i { font-size: 20px; transition: all 0.2s ease; }
-.nav-item.active { color: #f4d03f; }
-.nav-item.active i { color: #f4d03f; transform: scale(1.1); }
+.nav-item.active { color: #34d399; }
+.nav-item.active i { color: #34d399; transform: scale(1.1); }
 .nav-item:active { transform: scale(0.92); }
 .nav-center-container { position: relative; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center; margin-top: -20px; flex-shrink: 0; }
-.nav-center-btn { position: relative; width: 76px; height: 76px; background: linear-gradient(135deg, #d4af37 0%, #6366f1 100%); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 32px; border: 4px solid var(--body-bg); cursor: pointer; z-index: 10; box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6), 0 0 0 2px rgba(139, 92, 246, 0.3); transition: transform 0.2s ease; }
+.nav-center-btn { position: relative; width: 76px; height: 76px; background: linear-gradient(135deg, #10b981 0%, #6366f1 100%); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 32px; border: 4px solid var(--body-bg); cursor: pointer; z-index: 10; box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6), 0 0 0 2px rgba(139, 92, 246, 0.3); transition: transform 0.2s ease; }
 .nav-center-btn:active { transform: scale(0.95); }
 .floating-popup-menu { display: none; position: fixed; bottom: 175px; left: 50%; transform: translateX(-50%); background: var(--bg-surface); border: 1px solid var(--card-border); border-radius: 12px; z-index: 10000; min-width: 170px; }
 .floating-popup-item { padding: 14px 18px; color: var(--text-main); cursor: pointer; font-size: 14px; display: flex; align-items: center; gap: 12px; }
@@ -568,7 +570,7 @@ border-color: rgba(139, 92, 246, 0.25);
 .modal { background: var(--bg-surface); width: 100%; max-width: 450px; padding: 22px; border-radius: 16px; max-height: 90vh; overflow-y: auto; border: 1px solid var(--card-border-custom); }
 [data-theme="light"] .modal { box-shadow: var(--card-shadow-hover); }
 .form-input { width: 100%; padding: 12px; background: var(--input-bg); border: 1px solid var(--card-border); border-radius: 8px; color: var(--text-main); margin-bottom: 12px; font-size: 15px; }
-[data-theme="light"] .form-input { border-color: #e6c86e; }
+[data-theme="light"] .form-input { border-color: #bbf7d0; }
 [data-theme="light"] .form-input:focus { border-color: var(--cyan); background: #fff; }
 textarea.form-input { min-height: 120px; resize: vertical; }
 .kategori-input-wrapper { position: relative; width: 100%; margin-bottom: 12px; display: flex; align-items: center; }
@@ -628,16 +630,16 @@ textarea.form-input { min-height: 120px; resize: vertical; }
 .lock-footer p { margin: 4px 0; display: flex; align-items: center; justify-content: center; gap: 6px; }
 .lock-card.success { animation: cardSuccess 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 @keyframes cardSuccess { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.02); } 100% { transform: scale(0.9); opacity: 0; } }
-[data-theme="light"] .lock-screen-modern { background: linear-gradient(135deg, #efe6c3 0%, #f8f4e8 50%, #f0f9ff 100%); }
+[data-theme="light"] .lock-screen-modern { background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 50%, #f0f9ff 100%); }
 [data-theme="light"] .lock-card { background: rgba(255, 255, 255, 0.9); border-color: rgba(139, 92, 246, 0.25); }
-[data-theme="light"] .pin-input-modern { background: #fff; border-color: #e6c86e; color: #2b2200; }
-[data-theme="light"] .pin-dots .dot { background: #e6c86e; border-color: #ddd6fe; }
+[data-theme="light"] .pin-input-modern { background: #fff; border-color: #bbf7d0; color: #052e2b; }
+[data-theme="light"] .pin-dots .dot { background: #bbf7d0; border-color: #ddd6fe; }
 [data-theme="light"] .pin-label, [data-theme="light"] .lock-footer p { color: #64748b; }
 [data-theme="light"] .forgot-btn { color: #64748b; }
 [data-theme="light"] .forgot-btn:hover { color: var(--cyan); }
 [data-theme="light"] .lock-feedback { background: rgba(255, 255, 255, 0.98); }
 [data-theme="light"] .feedback-text { color: #334155; }
-[data-theme="light"] .logo-icon { background: linear-gradient(135deg, #d4af37, #ffd700); }
+[data-theme="light"] .logo-icon { background: linear-gradient(135deg, #10b981, #f59e0b); }
 .toggle-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--card-border); margin-bottom: 15px; }
 .toggle-label { font-size: 14px; color: var(--text-main); font-weight: 500; display: flex; align-items: center; gap: 8px; }
 .switch { position: relative; display: inline-block; width: 44px; height: 24px; }
@@ -702,7 +704,7 @@ animation: pulse-sync 1.5s infinite;
 .popup-close:hover { background: rgba(244, 63, 94, 0.1); color: #fb7185; }
 .popup-body { padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; overflow-y: auto; flex: 1; }
 .popup-row-modern { display: flex; flex-direction: column; gap: 5px; padding: 7px 14px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; }
-[data-theme="light"] .popup-row-modern { background: #f8f4e8; border-color: #e6c86e; }
+[data-theme="light"] .popup-row-modern { background: #f8f4e8; border-color: #bbf7d0; }
 .popup-row-modern.full-width { background: rgba(139, 92, 246, 0.04); border-style: dashed; }
 [data-theme="light"] .popup-row-modern.full-width { background: rgba(139, 92, 246, 0.02); }
 .popup-label-modern { font-size: 13px; font-weight: 600; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.6px; display: flex; align-items: center; gap: 6px; }
@@ -714,14 +716,14 @@ animation: pulse-sync 1.5s infinite;
 .popup-row-actions { display: flex; align-items: center; gap: 4px; }
 .popup-icon-btn { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); color: var(--slate-500); width: 32px; height: 32px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 13px; }
 .popup-icon-btn:hover { background: rgba(139, 92, 246, 0.15); color: var(--cyan-light); }
-[data-theme="light"] .popup-icon-btn { background: #fff; border-color: #e6c86e; }
+[data-theme="light"] .popup-icon-btn { background: #fff; border-color: #bbf7d0; }
 .popup-footer-modern { padding: 12px 20px 18px; border-top: 1px solid rgba(255, 255, 255, 0.06); display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: rgba(0, 0, 0, 0.15); }
 [data-theme="light"] .popup-footer-modern { border-top-color: rgba(0, 0, 0, 0.05); background: #f8f4e8; }
 .popup-btn-modern { padding: 11px 14px; border-radius: 10px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .popup-btn-modern.edit { background: rgba(139, 92, 246, 0.15); color: var(--cyan-light); border: 1px solid rgba(139, 92, 246, 0.2); }
 .popup-btn-modern.delete { background: rgba(244, 63, 94, 0.1); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.15); }
 .backup-category-item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
-[data-theme="light"] .backup-category-item { background: #f8f4e8; border-color: #e6c86e; }
+[data-theme="light"] .backup-category-item { background: #f8f4e8; border-color: #bbf7d0; }
 .backup-category-item:hover { border-color: var(--cyan); background: rgba(139, 92, 246, 0.08); }
 .backup-category-item.selected { border-color: var(--cyan); background: rgba(139, 92, 246, 0.12); box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2); }
 .backup-checkbox { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--slate-500); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s; }
@@ -736,7 +738,7 @@ animation: pulse-sync 1.5s infinite;
 .backup-select-all-count { font-size: 12px; color: var(--slate-500); font-family: var(--font-standar-mono); }
 .backup-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px; }
 .backup-stat-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; padding: 12px; text-align: center; }
-[data-theme="light"] .backup-stat-card { background: #f8f4e8; border-color: #e6c86e; }
+[data-theme="light"] .backup-stat-card { background: #f8f4e8; border-color: #bbf7d0; }
 .backup-stat-value { font-size: 22px; font-weight: 800; color: var(--cyan); }
 .backup-stat-label { font-size: 10px; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
 .import-preview-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 6px; font-size: 12px; }
@@ -1757,13 +1759,12 @@ window.manualSyncProfiles = async function() {
   }
 };
 
-// === 🆕 CEK FIRST-TIME SETUP (TAMBAHKAN INI) ===
+// === 🆕 FIRST-TIME SETUP ===
 function checkFirstTimeSetup() {
   const hasProfiles = profiles.length > 0;
   const hasMasterDb = getMasterDbUrl();
   
   if (!hasProfiles && !hasMasterDb) {
-    // Tidak ada profil DAN tidak ada Master DB
     showFirstTimeSetupModal();
     return true;
   }
@@ -1771,7 +1772,6 @@ function checkFirstTimeSetup() {
 }
 
 function showFirstTimeSetupModal() {
-  // Cek apakah modal sudah ada, kalau belum buat baru
   let modal = document.getElementById('firstTimeSetupModal');
   if (!modal) {
     modal = document.createElement('div');
@@ -1784,23 +1784,9 @@ function showFirstTimeSetupModal() {
             <i class="fa-solid fa-rocket"></i>
           </div>
           <h2 style="color:var(--accent-color); margin-bottom:8px; font-size:22px;">Selamat Datang di Royyek Vault!</h2>
-          <p style="color:var(--slate-500); font-size:13px;">Pilih cara untuk memulai penggunaan aplikasi</p>
+          <p style="color:var(--slate-500); font-size:13px;">Pilih cara untuk memulai</p>
         </div>
-        
         <div style="display:flex; flex-direction:column; gap:12px;">
-          <!-- Opsi 1: Pengguna Baru -->
-          <button onclick="selectSetupMode('new')" style="background:var(--bg-surface); border:2px solid var(--card-border-custom); border-radius:12px; padding:16px; cursor:pointer; transition:all 0.2s; display:flex; align-items:center; gap:12px; text-align:left;">
-            <div style="width:48px; height:48px; background:rgba(139, 92, 246, 0.15); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--cyan); font-size:24px; flex-shrink:0;">
-              <i class="fa-solid fa-user-plus"></i>
-            </div>
-            <div style="flex:1; min-width:0;">
-              <div style="font-weight:700; color:var(--text-main); margin-bottom:4px; font-size:15px;">Pengguna Baru</div>
-              <div style="font-size:12px; color:var(--slate-500);">Buat profil pertama dan database baru dari awal</div>
-            </div>
-            <i class="fa-solid fa-chevron-right" style="color:var(--slate-500);"></i>
-          </button>
-          
-          <!-- Opsi 2: Sudah Punya Akun (Sync dari Cloud) -->
           <button onclick="selectSetupMode('existing')" style="background:linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(6, 182, 212, 0.1)); border:2px solid rgba(139, 92, 246, 0.3); border-radius:12px; padding:16px; cursor:pointer; transition:all 0.2s; display:flex; align-items:center; gap:12px; text-align:left;">
             <div style="width:48px; height:48px; background:rgba(6, 182, 212, 0.15); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--blue); font-size:24px; flex-shrink:0;">
               <i class="fa-solid fa-cloud-arrow-down"></i>
@@ -1811,13 +1797,16 @@ function showFirstTimeSetupModal() {
             </div>
             <i class="fa-solid fa-chevron-right" style="color:var(--slate-500);"></i>
           </button>
-        </div>
-        
-        <div style="margin-top:20px; padding-top:16px; border-top:1px dashed var(--card-border-custom); text-align:center;">
-          <p style="font-size:11px; color:var(--slate-500);">
-            <i class="fa-solid fa-shield-halved" style="color:var(--cyan);"></i>
-            Data Anda aman dan terenkripsi
-          </p>
+          <button onclick="selectSetupMode('new')" style="background:var(--bg-surface); border:2px solid var(--card-border-custom); border-radius:12px; padding:16px; cursor:pointer; transition:all 0.2s; display:flex; align-items:center; gap:12px; text-align:left;">
+            <div style="width:48px; height:48px; background:rgba(139, 92, 246, 0.15); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--cyan); font-size:24px; flex-shrink:0;">
+              <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <div style="flex:1; min-width:0;">
+              <div style="font-weight:700; color:var(--text-main); margin-bottom:4px; font-size:15px;">Pengguna Baru</div>
+              <div style="font-size:12px; color:var(--slate-500);">Buat profil pertama dan database baru dari awal</div>
+            </div>
+            <i class="fa-solid fa-chevron-right" style="color:var(--slate-500);"></i>
+          </button>
         </div>
       </div>
     `;
@@ -1827,110 +1816,91 @@ function showFirstTimeSetupModal() {
 }
 
 function selectSetupMode(mode) {
-    const modal = document.getElementById('firstTimeSetupModal');
-    if (modal) modal.remove();
-    
-    if (mode === 'new') {
-        // Buka form buat profil baru
-        openAddAccountModal();
-    } else if (mode === 'existing') {
-        // Langsung buka form Master DB
-        openMasterDbSetupModal();
-    }
+  const modal = document.getElementById('firstTimeSetupModal');
+  if (modal) modal.remove();
+  
+  if (mode === 'new') {
+    openAddAccountModal();
+  } else if (mode === 'existing') {
+    openMasterDbSetupModal();
+  }
 }
 
 function openMasterDbSetupModal() {
-    const modal = document.createElement('div');
-    modal.className = 'modal-overlay';
-    modal.id = 'masterDbSetupModal';
-    modal.style.display = 'grid';
-    
-    modal.innerHTML = `
-        <div class="modal" style="max-width: 500px;">
-            <h3 style="margin-bottom: 16px; color: var(--accent-color);">
-                <i class="fa-solid fa-cloud"></i> Sinkronkan Profil
-            </h3>
-            
-            <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid var(--card-border-custom); 
-                        border-radius: 12px; padding: 16px; margin-bottom: 20px;">
-                <p style="font-size: 13px; color: var(--slate-300); margin: 0;">
-                    <i class="fa-solid fa-info-circle" style="color: var(--cyan); margin-right: 6px;"></i>
-                    Masukkan URL Master Database untuk mengambil semua profil Anda dari cloud.
-                </p>
-            </div>
-            
-            <div style="margin-bottom: 20px;">
-                <label style="display: block; font-size: 13px; font-weight: 600; 
-                              color: var(--slate-300); margin-bottom: 8px;">
-                    <i class="fa-solid fa-link" style="color: var(--cyan); margin-right: 6px;"></i>
-                    URL Master Database
-                </label>
-                <input type="text" id="first-master-db-url" class="form-input" 
-                       placeholder="https://script.google.com/macros/s/.../exec"
-                       style="font-family: var(--font-standar-mono); font-size: 12px;">
-            </div>
-            
-            <div style="display: flex; gap: 12px;">
-                <button onclick="saveFirstMasterDb()" class="btn-pro" 
-                        style="flex: 1; justify-content: center;">
-                    <i class="fa-solid fa-cloud-arrow-down"></i> Sinkronkan
-                </button>
-                <button onclick="closeFirstMasterDbSetup(); showFirstTimeSetupModal();" 
-                        style="flex: 1; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); 
-                               color: var(--slate-300); border-radius: 8px; font-size: 13px; cursor: pointer;">
-                    Kembali
-                </button>
-            </div>
-        </div>
-    `;
-    
-    document.body.appendChild(modal);
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay';
+  modal.id = 'masterDbSetupModal';
+  modal.style.display = 'grid';
+  modal.innerHTML = `
+    <div class="modal" style="max-width: 500px;">
+      <h3 style="margin-bottom: 16px; color: var(--accent-color);">
+        <i class="fa-solid fa-cloud"></i> Sinkronkan Profil
+      </h3>
+      <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid var(--card-border-custom); border-radius: 12px; padding: 16px; margin-bottom: 20px;">
+        <p style="font-size: 13px; color: var(--slate-300); margin: 0;">
+          <i class="fa-solid fa-info-circle" style="color: var(--cyan); margin-right: 6px;"></i>
+          Masukkan URL Master Database untuk mengambil semua profil Anda dari cloud.
+        </p>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; font-size: 13px; font-weight: 600; color: var(--slate-300); margin-bottom: 8px;">
+          <i class="fa-solid fa-link" style="color: var(--cyan); margin-right: 6px;"></i>
+          URL Master Database
+        </label>
+        <input type="text" id="first-master-db-url" class="form-input"
+               placeholder="https://script.google.com/macros/s/.../exec"
+               style="font-family: var(--font-standar-mono); font-size: 12px;">
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <button onclick="saveFirstMasterDb()" class="btn-pro" style="flex: 1; justify-content: center;">
+          <i class="fa-solid fa-cloud-arrow-down"></i> Sinkronkan
+        </button>
+        <button onclick="closeFirstMasterDbSetup(); showFirstTimeSetupModal();"
+                style="flex: 1; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: var(--slate-300); border-radius: 8px; font-size: 13px; cursor: pointer;">
+          Kembali
+        </button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
 }
 
 function closeFirstMasterDbSetup() {
-    const modal = document.getElementById('masterDbSetupModal');
-    if (modal) modal.remove();
+  const modal = document.getElementById('masterDbSetupModal');
+  if (modal) modal.remove();
 }
 
 async function saveFirstMasterDb() {
-    const input = document.getElementById('first-master-db-url');
-    const url = input ? input.value.trim() : '';
-    
-    if (!url) {
-        showToast('⚠️ URL tidak boleh kosong!', 'fa-circle-exclamation');
-        return;
-    }
-    
-    if (!url.includes('/exec')) {
-        showToast('⚠️ URL harus mengandung /exec', 'fa-circle-exclamation');
-        return;
-    }
-    
-    // Simpan Master DB
-    localStorage.setItem(MASTER_DB_KEY, url);
-    
-    // Tutup modal
-    closeFirstMasterDbSetup();
-    
-    // Load profiles dari cloud
-    showToast('⏳ Mengunduh profil dari cloud...', 'fa-spinner');
-    
-    const success = await loadProfilesFromCloud();
-    
-    if (success && profiles.length > 0) {
-        showToast(`✅ Berhasil! ${profiles.length} profil tersinkron`, 'fa-check-circle');
-        // Auto login ke profil pertama
-        setTimeout(() => {
-            selectProfile(profiles[0].id);
-        }, 1500);
-    } else {
-        showToast('⚠️ Tidak ada profil di Master DB. Buat profil baru?', 'fa-circle-exclamation');
-        setTimeout(() => {
-            openAddAccountModal();
-        }, 1500);
-    }
+  const input = document.getElementById('first-master-db-url');
+  const url = input ? input.value.trim() : '';
+  
+  if (!url) {
+    showToast('⚠️ URL tidak boleh kosong!', 'fa-circle-exclamation');
+    return;
+  }
+  if (!url.includes('/exec')) {
+    showToast('⚠️ URL harus mengandung /exec', 'fa-circle-exclamation');
+    return;
+  }
+  
+  localStorage.setItem(MASTER_DB_KEY, url);
+  closeFirstMasterDbSetup();
+  
+  showToast('⏳ Mengunduh profil dari cloud...', 'fa-spinner');
+  const success = await loadProfilesFromCloud();
+  
+  if (success && profiles.length > 0) {
+    showToast(`✅ Berhasil! ${profiles.length} profil tersinkron`, 'fa-check-circle');
+    setTimeout(() => {
+      selectProfile(profiles[0].id);
+    }, 1500);
+  } else {
+    showToast('⚠️ Tidak ada profil di Master DB. Buat profil baru?', 'fa-circle-exclamation');
+    setTimeout(() => {
+      openAddAccountModal();
+    }, 1500);
+  }
 }
-
 // === 🆕 AUTO-SYNC PROFIL KE CLOUD ===
 const originalSetItem = Storage.prototype.setItem;
 Storage.prototype.setItem = function(key, value) {
